@@ -47,7 +47,8 @@ res = pd.DataFrame({'relative_humidity_2m': 0.0, 'apparent_temperature':0.0,
 today = datetime.datetime.now()
 end_date = today + datetime.timedelta(days=14)
 
-st.write("Ingrese fecha y hora a predecir")
+st.write('Este modelo predice el número de viajes en la ciudad de Nueva York en un momento determinado. Para ello, debe seleccionar fecha y hora.')
+st.write('Al presionar el botón "Realizar predicción" obtendrá el número de viajes predicho para ese momento. Al presionar "Ver tendencia diaria", se graficarán las predicciones del dia.')
 date = st.date_input(label='Fecha', min_value=today, max_value=end_date, 
                      label_visibility="collapsed")
 hour_widget = st.time_input(label="Hora UTC", label_visibility="collapsed",
