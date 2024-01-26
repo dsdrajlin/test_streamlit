@@ -17,4 +17,4 @@ plotly
 scikit-learn
 
 # Streamlit
-streamlit
+streamlit==1.4.0
